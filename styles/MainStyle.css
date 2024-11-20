@@ -1,10 +1,8 @@
-.SomeDivInformation {
-    position: relative;
-    max-width: 80%;
-    min-width: 70px;
-    height: 1000px;
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: #3C3C3C;
-    color: white;
+
+#ImageMC {
+    object-fit: cover;
+    width: 100%; 
+    height: 1080px; 
+    background-position: center center; 
+    background-repeat: no-repeat;
 }

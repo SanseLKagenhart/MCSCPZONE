@@ -1,5 +1,5 @@
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Use Roboto, fallback to generic sans-serif */
     margin: 0;
     padding: 0;
 }
@@ -8,31 +8,48 @@ body {
     background-color: #282828;
 }
 
+a {
+    text-decoration: none; 
+}
+
 .navbar {
     position: sticky;
-    background-color: #B03B3B;
+    background-color: #282828;
     width: 100%;
-    height: 50px;
+    height: 100px;
     top: 0px;
     z-index: 1;
+    box-shadow: 0 5px 10px;
 } .homepage {
     cursor: pointer;
-} .navbar .homepage #icon {
+} .navbar #homepage {
     position: absolute;
-    width: 40px;
-    top: 5px;
-    left: 5px;
-} .navbar .homepage #NameOfProject {
+    width: 300px;
+    top: 18px;
+    margin: 0px 25px 0px 0px; 
+    left: 40px;
+} .navbar #menu {
     position: absolute;
-    top: 3px;
-    left: 50px;
-    color: black;
-    font-size: 35px;
-    font-weight: 300;
-} .navbar #rules {
-    position: absolute;
-    width: 45px;
-    right: 5px;
-    top: 3px;
+    width: 50px;
+    right: 30px;
+    top: 25px;
     cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .navbar #homepage {
+      visibility: hidden;
+    }
+    .navbar {
+        background-color: #B03B3B;
+        transition: background-color 0.5s ease;
+    }
+}
+
+@media (min-width: 901px)
+{
+    .navbar {
+        background-color: #282828; 
+        transition: background-color 0.5s ease; 
+    }
 }
