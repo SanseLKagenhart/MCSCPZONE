@@ -5,51 +5,29 @@
 }
 
 body {
-    background-color: #282828;
-}
-
-a {
-    text-decoration: none; 
+    background-color: #3c3c3c;
 }
 
 .navbar {
     position: sticky;
     background-color: #282828;
     width: 100%;
-    height: 100px;
+    height: 80px;
     top: 0px;
-    z-index: 1;
+    z-index: 100;
     box-shadow: 0 5px 10px;
 } .homepage {
     cursor: pointer;
 } .navbar #homepage {
     position: absolute;
-    width: 300px;
+    width: 200px;
     top: 18px;
     margin: 0px 25px 0px 0px; 
-    left: 40px;
+    left: 20px;
 } .navbar #menu {
     position: absolute;
-    width: 50px;
+    width: 30px;
     right: 30px;
     top: 25px;
     cursor: pointer;
-}
-
-@media (max-width: 900px) {
-    .navbar #homepage {
-      visibility: hidden;
-    }
-    .navbar {
-        background-color: #B03B3B;
-        transition: background-color 0.5s ease;
-    }
-}
-
-@media (min-width: 901px)
-{
-    .navbar {
-        background-color: #282828; 
-        transition: background-color 0.5s ease; 
-    }
 }

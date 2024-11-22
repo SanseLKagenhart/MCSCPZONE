@@ -1,8 +1,12 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
 
-#ImageMC {
-    object-fit: cover;
-    width: 100%; 
-    height: 1080px; 
-    background-position: center center; 
-    background-repeat: no-repeat;
+@media (max-width: 1300px) {
+    #launcher {
+        justify-content: center !important;
+    }
+    #background-image {
+        height: 1920px !important;
+    }
 }
