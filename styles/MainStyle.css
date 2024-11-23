@@ -1,12 +1,99 @@
 body {
+    height: 4000px;
     font-family: 'Noto Sans', sans-serif;
 }
 
-@media (max-width: 1300px) {
-    #launcher {
+a {
+    text-decoration: none;
+}
+
+
+
+/* Launcher-add */
+#background-image {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 750px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+} .launcher {
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 90%;
+    margin: 40px auto;
+} .launcher h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: bolder;
+} .launcher #installer {
+    background-color: #B03B3B;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 50px;
+    width: 300px;
+    cursor: pointer;
+    border-radius: 10px;
+} .launcher #installer h2 {
+    font-size: 21px;
+    margin: 0;
+    color: white;
+} .launcher img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Scroll information 0*/
+.Scroll-Information_0 {
+    position: relative;
+    top:100px;
+    width: 100%;
+    height: 1000px;
+}
+
+/* Scroll information 1*/
+.Scroll-Information_1 {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 1000px;
+}
+
+/* Contacts */
+.Contacts {
+    background-color: #282828;
+    position: relative;
+    top: 3500px;
+    width: 100%;
+    height: 500px;
+}
+
+@media (max-width: 1380px) {
+    .launcher {
         justify-content: center !important;
+        
+    } 
+}
+
+@media (max-width: 1366px) {
+    .launcher {
+        top: 0;
+        align-items: center !important;
+        text-align: center !important;
     }
+
     #background-image {
-        height: 1920px !important;
+        height: 900px !important;
+    }
+    #installer {
+        margin: 10px auto;
     }
 }
